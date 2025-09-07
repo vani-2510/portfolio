@@ -68,13 +68,17 @@ const Hero = () => {
 
           <div className="flex justify-center gap-6 animate-in slide-in-from-bottom-4 duration-1000 delay-800">
             <a 
-              href="#" 
+              href="https://github.com/vani-2510" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-glass backdrop-blur-glass border border-glass hover:bg-primary/20 transition-all duration-300 transform hover:scale-110"
             >
               <Github className="w-6 h-6" />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/%20vanigunisetty25" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-glass backdrop-blur-glass border border-glass hover:bg-primary/20 transition-all duration-300 transform hover:scale-110"
             >
               <Linkedin className="w-6 h-6" />
