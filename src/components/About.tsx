@@ -3,9 +3,9 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   const skills = [
-    "React", "TypeScript", "Node.js", "Python", "Next.js", "Tailwind CSS",
-    "PostgreSQL", "MongoDB", "Docker", "AWS", "GraphQL", "REST APIs",
-    "Git", "Figma", "Adobe Creative Suite", "Responsive Design"
+    "Python", "Data Science", "HTML", "CSS", "C", "JavaScript", "Responsive Design",
+    "SQL", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Tableau", 
+    "Power BI", "Excel", "Statistics", "Machine Learning", "R"
   ];
 
   return (
@@ -16,7 +16,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Passionate developer with 5+ years of experience creating exceptional digital experiences
+            Passionate data analyst with expertise in transforming raw data into actionable business insights
           </p>
         </div>
 
@@ -25,13 +25,13 @@ const About = () => {
             <Card className="p-8 bg-glass backdrop-blur-glass border-glass shadow-elegant hover:shadow-glow transition-all duration-300">
               <h3 className="text-2xl font-semibold mb-4 text-foreground">My Journey</h3>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                Started as a curious student exploring the endless possibilities of code. 
-                Now I'm a seasoned developer who loves turning complex problems into elegant solutions.
+                Started as a curious student exploring the power of data and analytics. 
+                Now I'm an experienced data professional who loves transforming complex datasets into actionable insights.
               </p>
               <p className="text-foreground/80 leading-relaxed">
-                I specialize in full-stack development with a keen eye for design. 
-                My mission is to bridge the gap between functionality and aesthetics, 
-                creating applications that are not only powerful but also delightful to use.
+                I specialize in data analytics with expertise in statistical analysis, machine learning, and data visualization. 
+                My mission is to bridge the gap between raw data and business value, 
+                creating insights that drive informed decision-making and strategic growth.
               </p>
             </Card>
 
@@ -40,19 +40,19 @@ const About = () => {
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Frontend Development (React, Vue, Angular)
+                  Data Analysis & Statistical Modeling
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Backend Development (Node.js, Python, Java)
+                  Machine Learning & Predictive Analytics
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  UI/UX Design & Prototyping
+                  Data Visualization & Dashboards
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Cloud Architecture & DevOps
+                  Web Development & Database Management
                 </li>
               </ul>
             </Card>
