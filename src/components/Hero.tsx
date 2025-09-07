@@ -37,10 +37,10 @@ const Hero = () => {
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent animate-in slide-in-from-bottom-4 duration-1000">
-              John Developer
+              Vani Gunisetty
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground animate-in slide-in-from-bottom-4 duration-1000 delay-200">
-              Full Stack Developer & UI/UX Designer
+              Data Analytics
             </h2>
             <p className="text-lg text-foreground/80 max-w-2xl mx-auto animate-in slide-in-from-bottom-4 duration-1000 delay-400">
               Crafting beautiful digital experiences with modern technologies. 
