@@ -6,36 +6,20 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with advanced features like real-time inventory, payment processing, and admin dashboard.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe", "Socket.io"],
+      title: "AI Fashion Design Generator",
+      description: "Built an AI image generation system using Hugging Face models with real-time output. Integrated ML models for real-time design generation, implemented secure authentication, and deployed using Docker and PM2.",
+      tech: ["React 18", "TypeScript", "Node.js", "Hugging Face", "Docker", "PM2"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/vani-2510",
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, file sharing, and team communication features.",
-      tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "WebSockets"],
+      title: "Hospital Appointment Booking System",
+      description: "Full-stack booking platform for doctors and patients with REST APIs for scheduling and user management. Created responsive UI with seamless backend integration.",
+      tech: ["React.js", "Node.js", "MongoDB", "Express", "REST API"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/vani-2510",
       featured: true
-    },
-    {
-      title: "Weather Analytics Dashboard",
-      description: "Data visualization platform showing weather trends, predictions, and historical data with interactive charts.",
-      tech: ["React", "Python", "FastAPI", "D3.js", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "Social Media Platform",
-      description: "Modern social networking application with real-time messaging, content sharing, and recommendation algorithms.",
-      tech: ["Vue.js", "Django", "Redis", "AWS S3", "WebRTC"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
     }
   ];
 
