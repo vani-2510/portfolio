@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -63,6 +63,17 @@ const Hero = () => {
               onClick={() => scrollToSection('contact')}
             >
               Get In Touch
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-glass text-foreground hover:bg-glass backdrop-blur-glass transition-all duration-300 transform hover:scale-105"
+              asChild
+            >
+              <a href="/Vani_Gunisetty_Resume.pdf" download>
+                <Download className="w-4 h-4 mr-2" />
+                Download Resume
+              </a>
             </Button>
           </div>
 
