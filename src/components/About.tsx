@@ -3,9 +3,9 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   const skills = [
-    "Python", "Data Science", "HTML", "CSS", "C", "JavaScript", "Responsive Design",
-    "SQL", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Tableau", 
-    "Power BI", "Excel", "Statistics", "Machine Learning", "R"
+    "Python", "HTML", "CSS", "JavaScript", "C", "React.js", "Node.js",
+    "Express", "MongoDB", "REST API", "Responsive Design", "Docker",
+    "PM2", "Hugging Face", "Git", "GitHub"
   ];
 
   return (
@@ -16,7 +16,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Passionate data analyst with expertise in transforming raw data into actionable business insights
+            Passionate Full Stack Web Developer building scalable, user-focused web applications from frontend to backend
           </p>
         </div>
 
@@ -25,13 +25,14 @@ const About = () => {
             <Card className="p-8 bg-glass backdrop-blur-glass border-glass shadow-elegant hover:shadow-glow transition-all duration-300">
               <h3 className="text-2xl font-semibold mb-4 text-foreground">My Journey</h3>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                Started as a curious student exploring the power of data and analytics. 
-                Now I'm an experienced data professional who loves transforming complex datasets into actionable insights.
+                My journey began with a strong curiosity for how websites and applications come to life.
+                That spark led me to explore both frontend and backend technologies, and to build full
+                stack projects that solve real-world problems — from AI-powered tools to healthcare platforms.
               </p>
               <p className="text-foreground/80 leading-relaxed">
-                I specialize in data analytics with expertise in statistical analysis, machine learning, and data visualization. 
-                My mission is to bridge the gap between raw data and business value, 
-                creating insights that drive informed decision-making and strategic growth.
+                Today, I work as a Full Stack Web Developer with hands-on experience in React.js, Node.js,
+                Express, and MongoDB. I love crafting clean, responsive interfaces, designing reliable REST APIs,
+                and shipping production-ready features using modern tools like Docker and PM2.
               </p>
             </Card>
 
@@ -40,19 +41,23 @@ const About = () => {
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Data Analysis & Statistical Modeling
+                  Frontend Development with React.js & Responsive UI Design
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Machine Learning & Predictive Analytics
+                  Backend Development with Node.js, Express & REST APIs
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Data Visualization & Dashboards
+                  Database Design & Integration with MongoDB
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Web Development & Database Management
+                  Deploying Full Stack Apps with Docker & PM2
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  Integrating AI/ML Models into Web Applications
                 </li>
               </ul>
             </Card>
