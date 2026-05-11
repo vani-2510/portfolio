@@ -38,26 +38,26 @@ const About = () => {
 
             <Card className="p-8 bg-glass backdrop-blur-glass border-glass shadow-elegant hover:shadow-glow transition-all duration-300">
               <h3 className="text-2xl font-semibold mb-4 text-foreground">What I Do</h3>
-              <ul className="space-y-2 text-foreground/80">
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Frontend Development with React.js & Responsive UI Design
+              <ul className="space-y-3 text-foreground/80">
+                <li className="flex items-start gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0"></div>
+                  <span><strong className="text-foreground">AI-Powered Web Apps</strong> — Built an AI Fashion Design Generator using Hugging Face models, delivering real-time generated designs to users.</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Backend Development with Node.js, Express & REST APIs
+                <li className="flex items-start gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0"></div>
+                  <span><strong className="text-foreground">Healthcare Platforms</strong> — Developed a Hospital Appointment Booking System with REST APIs that streamlined doctor–patient scheduling.</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Database Design & Integration with MongoDB
+                <li className="flex items-start gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0"></div>
+                  <span><strong className="text-foreground">Content & Blogging Platforms</strong> — Built The Corporate Blog, a full-stack blogging app with secure auth and a clean editorial UI.</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Deploying Full Stack Apps with Docker & PM2
+                <li className="flex items-start gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0"></div>
+                  <span><strong className="text-foreground">Secure Data Tools</strong> — Created NoteLock, an encrypted notes & password manager that safeguards user credentials across devices.</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Integrating AI/ML Models into Web Applications
+                <li className="flex items-start gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0"></div>
+                  <span><strong className="text-foreground">Production Deployment</strong> — Shipped projects with Docker & PM2, ensuring reliable uptime and smooth release cycles.</span>
                 </li>
               </ul>
             </Card>

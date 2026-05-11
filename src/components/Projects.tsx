@@ -20,6 +20,22 @@ const Projects = () => {
       liveUrl: "#",
       githubUrl: "https://github.com/vani-2510",
       featured: true
+    },
+    {
+      title: "The Corporate Blog",
+      description: "Full-stack corporate blogging platform with a TypeScript frontend and backend, secure authentication via access tokens, and a clean editorial reading experience. Deployed live on Vercel.",
+      tech: ["TypeScript", "React", "Node.js", "REST API", "Vercel"],
+      liveUrl: "https://the-corporate-blog-kappa.vercel.app/",
+      githubUrl: "https://github.com/vani-2510/the-corporate-blog",
+      featured: true
+    },
+    {
+      title: "NoteLock",
+      description: "Secure web app for managing sensitive notes and passwords. Uses strong encryption and authentication so users can safely store, organize and retrieve credentials from any device.",
+      tech: ["Next.js", "TypeScript", "Prisma", "SQLite", "Tailwind CSS"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/vani-2510/NoteLock",
+      featured: true
     }
   ];
 
