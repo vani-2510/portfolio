@@ -1,125 +1,99 @@
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import { Linkedin, Mail, Download, Github } from "lucide-react";
 import profilePhoto from "@/assets/profile.jpg";
 
 const Hero = () => {
-  const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const scrollTo = (id: string) =>
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero"
-      style={{
-        backgroundImage: `linear-gradient(rgba(30, 27, 75, 0.7), rgba(30, 27, 75, 0.8)), url(${heroImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
+    <section
+      id="home"
+      className="min-h-screen flex items-center pt-24 pb-16 bg-gradient-hero"
     >
-      {/* Floating particles effect */}
-      <div className="absolute inset-0">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-2 h-2 bg-primary/20 rounded-full animate-pulse"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${3 + Math.random() * 2}s`
-            }}
-          />
-        ))}
-      </div>
-
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="space-y-8">
-          <div className="flex justify-center animate-in slide-in-from-bottom-4 duration-1000">
-            <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-primary/40 shadow-glow">
-              <AvatarImage src={profilePhoto} alt="Gunisetty Vani" className="object-cover" />
-              <AvatarFallback className="bg-gradient-primary text-primary-foreground text-4xl md:text-5xl font-bold">
-                GV
-              </AvatarFallback>
-            </Avatar>
+      <div className="container mx-auto px-6">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Photo */}
+          <div className="flex justify-center md:justify-end animate-in fade-in slide-in-from-left-6 duration-700">
+            <div className="relative">
+              <div
+                className="absolute -inset-4 rounded-full opacity-30 blur-2xl"
+                style={{ background: "var(--gradient-primary)" }}
+              />
+              <img
+                src={profilePhoto}
+                alt="Gunisetty Vani — Full Stack Web Developer"
+                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-card shadow-elegant"
+              />
+            </div>
           </div>
-          <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent animate-in slide-in-from-bottom-4 duration-1000">
+
+          {/* Intro */}
+          <div className="text-center md:text-left space-y-5 animate-in fade-in slide-in-from-right-6 duration-700">
+            <p className="text-lg text-muted-foreground">Hello, I'm</p>
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
               GUNISETTY VANI
             </h1>
-            <h2 className="text-xl md:text-2xl text-muted-foreground animate-in slide-in-from-bottom-4 duration-1000 delay-200">
+            <h2 className="text-xl md:text-2xl text-foreground/70 font-medium">
               Full Stack Web Developer
             </h2>
-            <p className="text-lg text-foreground/80 max-w-2xl mx-auto animate-in slide-in-from-bottom-4 duration-1000 delay-400">
-              Building scalable web applications with modern technologies and clean architecture.
-              Passionate about creating responsive user experiences, developing efficient backend systems,
-              and delivering high-quality solutions through clean, maintainable code.
+            <p className="text-base text-muted-foreground max-w-xl mx-auto md:mx-0">
+              Building scalable web applications with modern technologies and
+              clean architecture. Passionate about creating responsive user
+              experiences, developing efficient backend systems, and delivering
+              high-quality solutions through clean, maintainable code.
             </p>
-          </div>
 
-          <div className="flex flex-wrap justify-center gap-4 animate-in slide-in-from-bottom-4 duration-1000 delay-600">
-            <Button 
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow hover:shadow-glow-accent transition-all duration-300 transform hover:scale-105"
-              onClick={() => scrollToSection('projects')}
-            >
-              View My Work
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-glass text-foreground hover:bg-glass backdrop-blur-glass transition-all duration-300 transform hover:scale-105"
-              onClick={() => scrollToSection('contact')}
-            >
-              Get In Touch
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-glass text-foreground hover:bg-glass backdrop-blur-glass transition-all duration-300 transform hover:scale-105"
-              asChild
-            >
-              <a href="/Vani_Gunisetty_Resume.pdf" download>
-                <Download className="w-4 h-4 mr-2" />
-                Download Resume
+            <div className="flex flex-wrap justify-center md:justify-start gap-3 pt-2">
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-full border-foreground/30 text-foreground hover:bg-secondary"
+                asChild
+              >
+                <a href="/Vani_Gunisetty_Resume.pdf" download>
+                  <Download className="w-4 h-4 mr-2" />
+                  Download Resume
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                className="rounded-full bg-foreground hover:bg-foreground/90 text-background"
+                onClick={() => scrollTo("contact")}
+              >
+                Get In Touch
+              </Button>
+            </div>
+
+            <div className="flex justify-center md:justify-start gap-3 pt-4">
+              <a
+                href="https://www.linkedin.com/in/%20vanigunisetty25"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-card border border-border text-foreground hover:text-primary hover:border-primary transition-colors shadow-sm"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
               </a>
-            </Button>
-          </div>
-
-          <div className="flex justify-center gap-6 animate-in slide-in-from-bottom-4 duration-1000 delay-800">
-            <a 
-              href="https://github.com/vani-2510" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-glass backdrop-blur-glass border border-glass hover:bg-primary/20 transition-all duration-300 transform hover:scale-110"
-            >
-              <Github className="w-6 h-6" />
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/%20vanigunisetty25" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-glass backdrop-blur-glass border border-glass hover:bg-primary/20 transition-all duration-300 transform hover:scale-110"
-            >
-              <Linkedin className="w-6 h-6" />
-            </a>
-            <a 
-              href="#" 
-              className="p-3 rounded-full bg-glass backdrop-blur-glass border border-glass hover:bg-primary/20 transition-all duration-300 transform hover:scale-110"
-            >
-              <Mail className="w-6 h-6" />
-            </a>
+              <a
+                href="https://github.com/vani-2510"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-card border border-border text-foreground hover:text-primary hover:border-primary transition-colors shadow-sm"
+                aria-label="GitHub"
+              >
+                <Github className="w-5 h-5" />
+              </a>
+              <a
+                href="mailto:vanigunisetty2510@gmail.com"
+                className="p-3 rounded-full bg-card border border-border text-foreground hover:text-primary hover:border-primary transition-colors shadow-sm"
+                aria-label="Email"
+              >
+                <Mail className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
-
-        <button 
-          onClick={() => scrollToSection('about')}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
-        >
-          <ArrowDown className="w-6 h-6 text-muted-foreground" />
-        </button>
       </div>
     </section>
   );
