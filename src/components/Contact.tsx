@@ -34,14 +34,12 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-            Get In Touch
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to bring your ideas to life? Let's discuss your next project and create something amazing together.
-          </p>
-        </div>
+        <p className="text-center text-sm uppercase tracking-widest text-muted-foreground mb-2">
+          Get in Touch
+        </p>
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-12">
+          Contact Me
+        </h2>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="space-y-8">
