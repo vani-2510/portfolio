@@ -20,9 +20,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <Card className="p-8 bg-glass backdrop-blur-glass border-glass shadow-elegant hover:shadow-glow transition-all duration-300">
+        <div className="grid md:grid-cols-3 gap-8 items-stretch">
+          <Card className="p-8 bg-glass backdrop-blur-glass border-glass shadow-elegant hover:shadow-glow transition-all duration-300">
               <h3 className="text-2xl font-semibold mb-4 text-foreground">My Journey</h3>
               <p className="text-foreground/80 leading-relaxed mb-4">
                 My journey began with a strong curiosity for how websites and applications come to life.
