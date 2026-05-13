@@ -60,25 +60,22 @@ const About = () => {
                 </li>
               </ul>
             </Card>
-          </div>
 
-          <div>
-            <Card className="p-8 bg-glass backdrop-blur-glass border-glass shadow-elegant">
-              <h3 className="text-2xl font-semibold mb-6 text-foreground">Skills & Technologies</h3>
-              <div className="flex flex-wrap gap-3">
-                {skills.map((skill, index) => (
-                  <Badge 
-                    key={skill} 
-                    variant="secondary"
-                    className="px-4 py-2 bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 transform hover:scale-105"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </Card>
-          </div>
+          <Card className="p-8 bg-glass backdrop-blur-glass border-glass shadow-elegant">
+            <h3 className="text-2xl font-semibold mb-6 text-foreground">Skills & Technologies</h3>
+            <div className="flex flex-wrap gap-3">
+              {skills.map((skill, index) => (
+                <Badge
+                  key={skill}
+                  variant="secondary"
+                  className="px-4 py-2 bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 transform hover:scale-105"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </Card>
         </div>
       </div>
     </section>
