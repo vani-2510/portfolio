@@ -37,8 +37,8 @@ const Projects = () => {
         "Designed a responsive, accessible UI for both desktop and mobile users",
       ],
       tech: ["React 18", "TypeScript", "Node.js", "Hugging Face", "Docker", "PM2"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/vani-2510",
+      liveUrl: "https://github.com/vani-2510/AI-Fashion-Design-",
+      githubUrl: "https://github.com/vani-2510/AI-Fashion-Design-",
       featured: true,
     },
     {
@@ -54,8 +54,8 @@ const Projects = () => {
         "Integrated MongoDB with clean, normalized data models",
       ],
       tech: ["React.js", "Node.js", "MongoDB", "Express", "REST API"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/vani-2510",
+      liveUrl: "https://github.com/vani-2510/hospital-appointment-booking",
+      githubUrl: "https://github.com/vani-2510/hospital-appointment-booking",
       featured: true,
     },
     {

@@ -20,7 +20,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
           <Card className="p-8 bg-glass backdrop-blur-glass border-glass shadow-elegant hover:shadow-glow transition-all duration-300">
               <h3 className="text-2xl font-semibold mb-4 text-foreground">My Journey</h3>
               <p className="text-foreground/80 leading-relaxed mb-4">
