@@ -155,29 +155,29 @@ const Projects = () => {
                 </div>
 
                 <div className="flex flex-wrap gap-3 pt-4">
-                  <Button
-                    size="sm"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setSelected(project);
-                    }}
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow hover:shadow-glow-accent transition-all duration-300"
-                  >
-                    <Info className="w-4 h-4 mr-2" />
-                    View Details
-                  </Button>
-                  {project.liveUrl && project.liveUrl !== "#" && (
+                  {project.liveUrl && project.liveUrl !== "#" ? (
                     <Button
-                      variant="outline"
                       size="sm"
                       onClick={(e) => e.stopPropagation()}
-                      className="border-glass text-foreground hover:bg-glass backdrop-blur-glass transition-all duration-300"
+                      className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow hover:shadow-glow-accent transition-all duration-300"
                       asChild
                     >
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Live Demo
                       </a>
+                    </Button>
+                  ) : (
+                    <Button
+                      size="sm"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelected(project);
+                      }}
+                      className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow hover:shadow-glow-accent transition-all duration-300"
+                    >
+                      <Info className="w-4 h-4 mr-2" />
+                      View Details
                     </Button>
                   )}
                   <Button
