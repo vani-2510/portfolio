@@ -20,9 +20,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <Card className="p-8 bg-glass backdrop-blur-glass border-glass shadow-elegant hover:shadow-glow transition-all duration-300">
+        <div className="grid md:grid-cols-3 gap-8 items-stretch">
+          <Card className="p-8 bg-glass backdrop-blur-glass border-glass shadow-elegant hover:shadow-glow transition-all duration-300">
               <h3 className="text-2xl font-semibold mb-4 text-foreground">My Journey</h3>
               <p className="text-foreground/80 leading-relaxed mb-4">
                 My journey began with a strong curiosity for how websites and applications come to life.
@@ -61,25 +60,22 @@ const About = () => {
                 </li>
               </ul>
             </Card>
-          </div>
 
-          <div>
-            <Card className="p-8 bg-glass backdrop-blur-glass border-glass shadow-elegant">
-              <h3 className="text-2xl font-semibold mb-6 text-foreground">Skills & Technologies</h3>
-              <div className="flex flex-wrap gap-3">
-                {skills.map((skill, index) => (
-                  <Badge 
-                    key={skill} 
-                    variant="secondary"
-                    className="px-4 py-2 bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 transform hover:scale-105"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </Card>
-          </div>
+          <Card className="p-8 bg-glass backdrop-blur-glass border-glass shadow-elegant">
+            <h3 className="text-2xl font-semibold mb-6 text-foreground">Skills & Technologies</h3>
+            <div className="flex flex-wrap gap-3">
+              {skills.map((skill, index) => (
+                <Badge
+                  key={skill}
+                  variant="secondary"
+                  className="px-4 py-2 bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 transform hover:scale-105"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </Card>
         </div>
       </div>
     </section>
