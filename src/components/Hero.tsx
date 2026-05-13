@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
+import profilePhoto from "@/assets/profile.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -38,14 +39,15 @@ const Hero = () => {
         <div className="space-y-8">
           <div className="flex justify-center animate-in slide-in-from-bottom-4 duration-1000">
             <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-primary/40 shadow-glow">
+              <AvatarImage src={profilePhoto} alt="Gunisetty Vani" className="object-cover" />
               <AvatarFallback className="bg-gradient-primary text-primary-foreground text-4xl md:text-5xl font-bold">
-                VG
+                GV
               </AvatarFallback>
             </Avatar>
           </div>
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent animate-in slide-in-from-bottom-4 duration-1000">
-              Vani Gunisetty
+              GUNISETTY VANI
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground animate-in slide-in-from-bottom-4 duration-1000 delay-200">
               Full Stack Web Developer
