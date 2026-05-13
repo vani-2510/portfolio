@@ -36,6 +36,13 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="space-y-8">
+          <div className="flex justify-center animate-in slide-in-from-bottom-4 duration-1000">
+            <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-primary/40 shadow-glow">
+              <AvatarFallback className="bg-gradient-primary text-primary-foreground text-4xl md:text-5xl font-bold">
+                VG
+              </AvatarFallback>
+            </Avatar>
+          </div>
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent animate-in slide-in-from-bottom-4 duration-1000">
               Vani Gunisetty
@@ -44,8 +51,9 @@ const Hero = () => {
               Full Stack Web Developer
             </h2>
             <p className="text-lg text-foreground/80 max-w-2xl mx-auto animate-in slide-in-from-bottom-4 duration-1000 delay-400">
-              Crafting beautiful digital experiences with modern technologies. 
-              Passionate about clean code, stunning designs, and solving complex problems.
+              Building scalable web applications with modern technologies and clean architecture.
+              Passionate about creating responsive user experiences, developing efficient backend systems,
+              and delivering high-quality solutions through clean, maintainable code.
             </p>
           </div>
 
