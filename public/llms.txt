@@ -1,0 +1,15 @@
+# Gunisetty Vani — Portfolio
+
+> Portfolio of Gunisetty Vani, a Full Stack Web Developer building scalable web applications with modern technologies and clean architecture.
+
+## Pages
+
+- [Home](/): About, experience, skills, projects, and contact information for Gunisetty Vani.
+
+## Sections
+
+- [About](/#about): Background, education, and experience overview.
+- [Experience](/#experience): SDE Internship at Bluestock Fintech.
+- [Skills](/#skills): Frontend, backend, and tooling proficiencies.
+- [Projects](/#projects): Featured projects including AI Fashion Design Generator, Hospital Appointment Booking System, and NoteLock.
+- [Contact](/#contact): Email and social links.
