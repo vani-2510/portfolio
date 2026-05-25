@@ -4,6 +4,8 @@ import About from "@/components/About";
 import Internship from "@/components/Internship";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Publications from "@/components/Publications";
+import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
 
 const Portfolio = () => {
@@ -15,6 +17,8 @@ const Portfolio = () => {
       <Internship />
       <Skills />
       <Projects />
+      <Publications />
+      <Certifications />
       <Contact />
     </div>
   );
