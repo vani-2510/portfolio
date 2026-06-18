@@ -20,7 +20,7 @@ const Internship = () => {
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-semibold text-foreground">
-                  Software Developer Engineer — Intern
+                  Software Development Engineer — Intern
                 </h3>
                 <p className="text-primary font-medium">
                   Bluestock Fintech Pvt. Ltd.
