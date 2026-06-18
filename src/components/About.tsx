@@ -34,7 +34,7 @@ const About = () => {
               Experience
             </h3>
             <p className="text-foreground/80">
-              <strong>Software Developer Engineer Intern</strong>
+              <strong>Software Development Engineer Intern</strong>
               <br />
               <span className="text-muted-foreground">
                 Bluestock Fintech Pvt. Ltd. — full stack feature development
