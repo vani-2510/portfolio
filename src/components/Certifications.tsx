@@ -28,10 +28,14 @@ const Certifications = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {certifications.map((c) => (
+          {certifications.map((c, i) => (
             <Card
               key={c.title}
-              className="p-6 bg-card border border-border shadow-elegant hover:shadow-glow hover:-translate-y-1 transition-all duration-300 flex items-center gap-4"
+              className={`p-6 bg-card border border-border shadow-elegant hover:shadow-glow hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 ${
+                i === certifications.length - 1 && certifications.length % 2 === 1
+                  ? "md:col-span-2 md:max-w-md md:mx-auto md:w-full"
+                  : ""
+              }`}
             >
               <div
                 className="w-14 h-14 rounded-xl flex items-center justify-center shrink-0"
