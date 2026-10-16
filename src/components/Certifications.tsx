@@ -10,6 +10,10 @@ const certifications = [
     title: "Artificial Intelligence & Cloud Technology",
     issuer: "IBM Edunet Foundation",
   },
+  {
+    title: "Java",
+    issuer: "HackerRank",
+  },
 ];
 
 const Certifications = () => {
