@@ -8,16 +8,13 @@ const groups = [
       { name: "HTML", level: "Experienced" },
       { name: "CSS", level: "Experienced" },
       { name: "JavaScript", level: "Intermediate" },
-      { name: "React.js", level: "Intermediate" },
       { name: "Responsive Design", level: "Intermediate" },
-      { name: "TypeScript", level: "Intermediate" },
     ],
   },
   {
     title: "Backend & Tools",
     items: [
-      { name: "Node.js", level: "Intermediate" },
-      { name: "MongoDB", level: "Intermediate" },
+      { name: "MySQL", level: "Intermediate" },
       { name: "REST API", level: "Intermediate" },
       { name: "Java", level: "Intermediate" },
       { name: "Docker", level: "Intermediate" },
