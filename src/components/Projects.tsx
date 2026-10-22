@@ -30,7 +30,7 @@ const projects: Project[] = [
     description:
       "Full-stack platform streamlining doctor–patient scheduling with REST APIs and responsive UI.",
     tech: ["React.js", "Node.js", "Express", "MongoDB", "REST API"],
-    liveUrl: "https://github.com/vani-2510/hospital-appointment-booking",
+    liveUrl: "https://github.com/vani-2510/hospital-booking-medibook",
     githubUrl: "https://github.com/vani-2510/hospital-appointment-booking",
     image: hospitalImg,
   },
